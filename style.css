@@ -49,12 +49,15 @@
 .info {
   display: flex;
   padding: 0 316px 0 315px;
+  position: relative;
 
 }
 
 .text {
   color: #FFF;
   margin-right: 71.3px;
+  display: flex;
+  flex-direction: column;
 }
 
 .text__title {
@@ -79,17 +82,91 @@
   height: 38px;
 }
 
+.info__heart-one {
+  width: 203.33px;
+  opacity: 0.15;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  transform: rotate(-14deg);
+}
+
+.info__heart-two {
+  max-width: 64.17px;
+  opacity: 0.2;
+  position: absolute;
+  top: 420px;
+  left: 650px;
+  transform: rotate(-14deg);
+}
+
+.info__heart-three {
+  width: 111.67px;
+  opacity: 0.2;
+  position: absolute;
+  top: 320px;
+  left: 750px;
+  transform: rotate(14deg);
+}
+
+.info__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .info__img {
   max-width: 706.864px;
   margin: 28px 0 0;
-  object-fit:cover
+  object-fit:cover;
+  z-index: 2;
 }
 
 .info__heart {
-  max-width: 244px;
+  width: 203.33px;
+  opacity: 0.15;
+  transform: rotate(14deg);
+  position: absolute;
+  z-index: 1;
 }
 
-.campaign-hugging__background {
-  width: 100%;
-  margin-top: -200px;
+/* .campaign-hugging {
+  margin-top: 155.47px;
 }
+
+.campaign-hugging__content {
+  margin-left: 484px;
+  position: relative;
+}
+
+.campaign-hugging__pink-background {
+  max-width: 737.24px;
+  margin-left: -100px;
+  z-index: -1;
+}
+
+.campaign-hugging__img-penguins {
+  z-index: 2;
+  opacity: 0.999;
+}
+
+.campaign-hugging__text {
+  width: 514px;
+  color: #FFF;
+  font-weight: 700;
+  position: absolute;
+  top: 50px;
+  right: 550px;
+}
+
+.campaign-hugging__title {
+  line-height: normal;
+  font-size: 26px;
+  text-transform: uppercase;
+  
+}
+
+.campaign-hugging__description {
+  font-size: 16px;
+  line-height: 20px;
+} */
